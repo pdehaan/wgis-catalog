@@ -1,0 +1,2314 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <title>wgis: catalog</title>
+
+    <link href="/assets/bootstrap-icons.css" rel="stylesheet" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65"
+      crossorigin="anonymous"
+    />
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
+      crossorigin="anonymous"
+    ></script>
+
+    <!-- Custom styles for this template -->
+    <link href="/assets/wgis2.css" rel="stylesheet" />
+
+    <script>
+      document.addEventListener("DOMContentLoaded", () => {
+        addFormFocusEvent();
+      });
+
+      function addFormFocusEvent() {
+        document.querySelector("#email").addEventListener("focus", () => {
+          document
+            .querySelector("#log_in")
+            .setAttribute("action", "/home/link");
+        });
+      }
+    </script>
+
+    <meta
+      property="og:image"
+      content="http://wgimprovschool.com/images/logo_square_small.jpg"
+    />
+    <meta property="og:title" content="wgis: catalog" />
+    <meta property="og:description" content="All past courses." />
+  </head>
+  <body>
+    <header>
+      <div class="container-lg container-fluid">
+        <nav class="navbar navbar-expand-md navbar-light bg-white">
+          <a class="navbar-brand" href="/"
+            ><span>World's Greatest Improv School</span></a
+          >
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarsExampleDefault"
+            aria-controls="navbarsExampleDefault"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarsExampleDefault">
+            <ul class="navbar-nav ml-auto justify-content-end">
+              <li class="nav-item">
+                <a class="nav-link" href="/classes">Classes</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="/calendar">Calendar</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a
+                  class="nav-link dropdown-toggle"
+                  href="#"
+                  id="dropdown1"
+                  data-bs-toggle="dropdown"
+                  aria-haspopup="true"
+                  aria-expanded="false"
+                  >About</a
+                >
+                <div class="dropdown-menu">
+                  <a class="dropdown-item" href="/teachers">Teachers</a>
+                  <a class="dropdown-item" href="/about-school">School</a>
+                  <a class="dropdown-item" href="/about-works">How It Works</a>
+                  <a class="dropdown-item" href="/about-catalog"
+                    >Course Catalog</a
+                  >
+                  <a class="dropdown-item" href="/community">Community</a>
+                  <a class="dropdown-item" href="/community#merch">Merch</a>
+                </div>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="/shows">Shows</a>
+              </li>
+              <li class="nav-item">
+                <a
+                  class="btn btn-outline-primary my-2 my-sm-0"
+                  data-bs-toggle="modal"
+                  data-bs-target="#login-modal"
+                  >Login</a
+                >
+              </li>
+            </ul>
+          </div>
+        </nav>
+      </div>
+    </header>
+    <main>
+      <div class="container-lg container-fluid">
+        <article>
+          <!-- Using the <article> tag to signify this is a straight page or post -->
+          <h1 class="page-title mb-5">Course Catalog</h1>
+          <div class="row justify-content-center">
+            <div class="col-md-10 col-12">
+              <small>Updated December 2022</small>
+
+              <h2>Levels</h2>
+              <p>
+                Starting January 2023, we've streamlined our core offerings to
+                four six-week courses at competitive prices. In-person courses
+                offer 2+ shows.
+              </p>
+
+              <div class="row my-2 d-flex align-items-center">
+                <div class="col">
+                  <div
+                    class="feature-icon-small d-inline-flex align-items-center justify-content-center text-bg-primary bg-gradient fs-4 rounded-3"
+                  >
+                    <i class="bi-emoji-smile"></i>
+                  </div>
+                  Level 1: Intro to Improv
+                </div>
+                <div class="col">
+                  Learn the basics: say yes, be real, get in the flow.
+                </div>
+              </div>
+              <div class="row my-2 d-flex align-items-center">
+                <div class="col">
+                  <div
+                    class="feature-icon-small d-inline-flex align-items-center justify-content-center text-bg-primary bg-gradient fs-4 rounded-3"
+                  >
+                    <i class="bi-controller"></i>
+                  </div>
+                  Level 2: Game of the Scene
+                </div>
+                <div class="col">
+                  Play game, not plot. Learn to pull ideas from an opening.
+                </div>
+              </div>
+              <div class="row my-2 d-flex align-items-center">
+                <div class="col">
+                  <div
+                    class="feature-icon-small d-inline-flex align-items-center justify-content-center text-bg-primary bg-gradient fs-4 rounded-3"
+                  >
+                    <i class="bi-translate"></i>
+                  </div>
+                  Level 3: Second Beats
+                </div>
+                <div class="col">Find the game, do it again, and support.</div>
+              </div>
+              <div class="row my-2 d-flex align-items-center">
+                <div class="col">
+                  <div
+                    class="feature-icon-small d-inline-flex align-items-center justify-content-center text-bg-primary bg-gradient fs-4 rounded-3"
+                  >
+                    <i class="bi-flower2"></i>
+                  </div>
+                  Level 4: Harold
+                </div>
+                <div class="col">
+                  Learn group games and third beats to complete your knowledge
+                  of the Harold.
+                </div>
+              </div>
+
+              <p>
+                See the <a href="/classes">list of classes</a> to see which of
+                these are being offered soon.
+              </p>
+
+              <h2>All Past Courses</h2>
+              <p>
+                We've done a lot of different classes and workshops since we
+                started in March 2020. Below is a list of everything in reverse
+                chronological order. If two courses had the exact same title,
+                only the most recent is shown.
+              </p>
+
+              <p>
+                <a href="#inperson">In person courses</a> |
+                <a href="#online">online courses</a>
+              </p>
+
+              <a id="inperson"></a>
+              <h3>In Person Courses</h3>
+              <div class="row mt-1">
+                <div class="col">
+                  <a href="/workshop/view/708">Finding Characters in Life</a>
+                </div>
+                <div class="col"><small>Michael Strassner</small></div>
+                <div class="col">Sun Apr 16 12pm</div>
+              </div>
+              <div class="row mt-1">
+                <div class="col">
+                  <a href="/workshop/view/704">Noon Bitness - March 2023</a>
+                </div>
+                <div class="col"><small>Jim Woods, Monika Smith</small></div>
+                <div class="col">Mon Mar 6 12pm</div>
+              </div>
+              <div class="row mt-1">
+                <div class="col">
+                  <a href="/workshop/view/690">Level 5: Pretty Flower</a>
+                </div>
+                <div class="col"><small>Joel Spence</small></div>
+                <div class="col">Sun Mar 5 6pm</div>
+              </div>
+              <div class="row mt-1">
+                <div class="col">
+                  <a href="/workshop/view/702">Find The Joy</a>
+                </div>
+                <div class="col"><small>Joel Spence</small></div>
+                <div class="col">Sun Feb 26 6pm</div>
+              </div>
+              <div class="row mt-1">
+                <div class="col">
+                  <a href="/workshop/view/688">Level 2: Game of the Scene</a>
+                </div>
+                <div class="col"><small>Will Hines</small></div>
+                <div class="col">Sun Feb 26 3pm</div>
+              </div>
+              <div class="row mt-1">
+                <div class="col">
+                  <a href="/workshop/view/687">Level 3: Second Beats</a>
+                </div>
+                <div class="col"><small>Will Hines</small></div>
+                <div class="col">Sun Feb 26 12pm</div>
+              </div>
+              <div class="row mt-1">
+                <div class="col">
+                  <a href="/workshop/view/701">Feb 20 Afternoon Bitness Week</a>
+                </div>
+                <div class="col"><small>Jim Woods, Sarah Claspell</small></div>
+                <div class="col">Mon Feb 20 2:15pm</div>
+              </div>
+              <div class="row mt-1">
+                <div class="col">
+                  <a href="/workshop/view/693">Harold Audition Warmup</a>
+                </div>
+                <div class="col"><small>Sarah Claspell</small></div>
+                <div class="col">Sun Feb 19 12pm</div>
+              </div>
+              <div class="row mt-1">
+                <div class="col">
+                  <a href="/workshop/view/700">Feb 13 Afternoon Bitness Week</a>
+                </div>
+                <div class="col"><small>Jim Woods, Sarah Claspell</small></div>
+                <div class="col">Mon Feb 13 2:15pm</div>
+              </div>
+              <div class="row mt-1">
+                <div class="col">
+                  <a href="/workshop/view/699">Feb 6 Afternoon Bitness Week</a>
+                </div>
+                <div class="col"><small>Jim Woods, Sarah Claspell</small></div>
+                <div class="col">Mon Feb 6 2:15pm</div>
+              </div>
+              <div class="row mt-1">
+                <div class="col">
+                  <a href="/workshop/view/684">Noon Bitness - Feb 2023</a>
+                </div>
+                <div class="col"><small>Jim Woods, Sarah Claspell</small></div>
+                <div class="col">Mon Feb 6 12pm</div>
+              </div>
+              <div class="row mt-1">
+                <div class="col">
+                  <a href="/workshop/view/683"
+                    >Afternoon Bitness - January 2023</a
+                  >
+                </div>
+                <div class="col"><small>Jim Woods, Sarah Claspell</small></div>
+                <div class="col">Mon Jan 9 2:15pm</div>
+              </div>
+              <div class="row mt-1">
+                <div class="col">
+                  <a href="/workshop/view/681">Noon Bitness - January 2023</a>
+                </div>
+                <div class="col"><small>Jim Woods, Sarah Claspell</small></div>
+                <div class="col">Mon Jan 9 12pm</div>
+              </div>
+              <div class="row mt-1">
+                <div class="col">
+                  <a href="/workshop/view/655"
+                    >After-Noon Bitness - December 2022</a
+                  >
+                </div>
+                <div class="col"><small>Jim Woods, Sarah Claspell</small></div>
+                <div class="col">Mon Nov 28 2022 2:15pm</div>
+              </div>
+              <div class="row mt-1">
+                <div class="col">
+                  <a href="/workshop/view/654">Noon Bitness - December 2022</a>
+                </div>
+                <div class="col"><small>Jim Woods, Sarah Claspell</small></div>
+                <div class="col">Mon Nov 28 2022 12pm</div>
+              </div>
+              <div class="row mt-1">
+                <div class="col">
+                  <a href="/workshop/view/650">Noon Bitness - November 2022</a>
+                </div>
+                <div class="col"><small>Jim Woods, Sarah Claspell</small></div>
+                <div class="col">Mon Oct 31 2022 12pm</div>
+              </div>
+              <div class="row mt-1">
+                <div class="col">
+                  <a href="/workshop/view/633">Level 3: Harold Structure</a>
+                </div>
+                <div class="col"><small>Will Hines</small></div>
+                <div class="col">Sun Oct 23 2022 12pm</div>
+              </div>
+              <div class="row mt-1">
+                <div class="col">
+                  <a href="/workshop/view/632">Level 4: Advanced Harold</a>
+                </div>
+                <div class="col"><small>Jim Woods</small></div>
+                <div class="col">Sat Oct 22 2022 12pm</div>
+              </div>
+              <div class="row mt-1">
+                <div class="col">
+                  <a href="/workshop/view/649"
+                    >After-Noon Bitness - October 2022</a
+                  >
+                </div>
+                <div class="col"><small>Will Hines, Jim Woods</small></div>
+                <div class="col">Mon Oct 3 2022 2:15pm</div>
+              </div>
+              <div class="row mt-1">
+                <div class="col">
+                  <a href="/workshop/view/648">Noon Bitness - October 2022</a>
+                </div>
+                <div class="col"><small>Will Hines, Jim Woods</small></div>
+                <div class="col">Mon Oct 3 2022 12pm</div>
+              </div>
+              <div class="row mt-1">
+                <div class="col">
+                  <a href="/workshop/view/630">Mini Bitness - September 2022</a>
+                </div>
+                <div class="col"><small>Will Hines, Jim Woods</small></div>
+                <div class="col">Tue Sep 6 2022 2:15pm</div>
+              </div>
+              <div class="row mt-1">
+                <div class="col">
+                  <a href="/workshop/view/629">Noon Bitness - September 2022</a>
+                </div>
+                <div class="col"><small>Will Hines, Jim Woods</small></div>
+                <div class="col">Tue Sep 6 2022 12pm</div>
+              </div>
+              <div class="row mt-1">
+                <div class="col">
+                  <a href="/workshop/view/624">Noon Bitness - August 2022</a>
+                </div>
+                <div class="col"><small>Will Hines, Jim Woods</small></div>
+                <div class="col">Mon Aug 1 2022 12pm</div>
+              </div>
+              <div class="row mt-1">
+                <div class="col">
+                  <a href="/workshop/view/613">Mini Bitness - July 2022</a>
+                </div>
+                <div class="col"><small>Will Hines, Jim Woods</small></div>
+                <div class="col">Tue Jul 5 2022 2:15pm</div>
+              </div>
+              <div class="row mt-1">
+                <div class="col">
+                  <a href="/workshop/view/612">Noon Bitness - July 2022</a>
+                </div>
+                <div class="col"><small>Will Hines, Jim Woods</small></div>
+                <div class="col">Tue Jul 5 2022 12pm</div>
+              </div>
+              <div class="row mt-1">
+                <div class="col">
+                  <a href="/workshop/view/601">Pulling Premise</a>
+                </div>
+                <div class="col"><small>Jim Woods</small></div>
+                <div class="col">Sun Jul 3 2022 1pm</div>
+              </div>
+              <div class="row mt-1">
+                <div class="col">
+                  <a href="/workshop/view/609">WGIS Monday Glendale Room Jam</a>
+                </div>
+                <div class="col"><small>Jim Woods, Will Hines</small></div>
+                <div class="col">Mon Jun 13 2022 7:30pm</div>
+              </div>
+              <div class="row mt-1">
+                <div class="col">
+                  <a href="/workshop/view/600">Sunday Harold</a>
+                </div>
+                <div class="col"><small>Will Hines</small></div>
+                <div class="col">Sun Jun 12 2022 12pm</div>
+              </div>
+              <div class="row mt-1">
+                <div class="col">
+                  <a href="/workshop/view/604"
+                    >Fear The Walking Bitness - June 2022</a
+                  >
+                </div>
+                <div class="col"><small>Will Hines, Jim Woods</small></div>
+                <div class="col">Mon Jun 6 2022 2:15pm</div>
+              </div>
+              <div class="row mt-1">
+                <div class="col">
+                  <a href="/workshop/view/598">24 Hour Bitness - June 2022</a>
+                </div>
+                <div class="col"><small>Will Hines, Jim Woods</small></div>
+                <div class="col">Mon Jun 6 2022 12pm</div>
+              </div>
+              <div class="row mt-1">
+                <div class="col">
+                  <a href="/workshop/view/592">3 Week in May</a>
+                </div>
+                <div class="col"><small>Will Hines</small></div>
+                <div class="col">Sun May 8 2022 12pm</div>
+              </div>
+              <div class="row mt-1">
+                <div class="col">
+                  <a href="/workshop/view/579">24 Hour Bitness - May 2022</a>
+                </div>
+                <div class="col"><small>Will Hines, Jim Woods</small></div>
+                <div class="col">Tue May 3 2022 12pm</div>
+              </div>
+              <div class="row mt-1">
+                <div class="col">
+                  <a href="/workshop/view/580">The Harold Part 2</a>
+                </div>
+                <div class="col"><small>Jim Woods</small></div>
+                <div class="col">Sun May 1 2022 1pm</div>
+              </div>
+              <div class="row mt-1">
+                <div class="col">
+                  <a href="/workshop/view/573"
+                    >Organic Scenework Boot Camp (In Person)</a
+                  >
+                </div>
+                <div class="col"><small>Will Hines</small></div>
+                <div class="col">Sun Apr 10 2022 12pm</div>
+              </div>
+              <div class="row mt-1">
+                <div class="col">
+                  <a href="/workshop/view/557"
+                    >Premise Initiations (In Person)</a
+                  >
+                </div>
+                <div class="col"><small>Will Hines</small></div>
+                <div class="col">Sun Mar 13 2022 12pm</div>
+              </div>
+              <div class="row mt-1">
+                <div class="col">
+                  <a href="/workshop/view/555">The Harold (in person class)</a>
+                </div>
+                <div class="col"><small>Jim Woods</small></div>
+                <div class="col">Sun Mar 6 2022 1pm</div>
+              </div>
+
+              <a id="online"></a>
+              <h3>Online Courses</h3>
+              <div class="row mt-1">
+                <div class="col">
+                  <a href="/workshop/view/707">Write The Real Stuff</a>
+                </div>
+                <div class="col"><small>Nate Smith</small></div>
+                <div class="col">Mon Apr 3 7pm</div>
+              </div>
+              <div class="row mt-1">
+                <div class="col">
+                  <a href="/workshop/view/696">Crash Course</a>
+                </div>
+                <div class="col"><small>Shannon O'Neill</small></div>
+                <div class="col">Thu Mar 16 2pm</div>
+              </div>
+              <div class="row mt-1">
+                <div class="col">
+                  <a href="/workshop/view/703">1000 Scenes</a>
+                </div>
+                <div class="col"><small>Billy Merritt</small></div>
+                <div class="col">Mon Mar 6 12pm</div>
+              </div>
+              <div class="row mt-1">
+                <div class="col">
+                  <a href="/workshop/view/698">Level 5: What's Your Deal</a>
+                </div>
+                <div class="col"><small>Julie Brister</small></div>
+                <div class="col">Mon Feb 27 10am</div>
+              </div>
+              <div class="row mt-1">
+                <div class="col">
+                  <a href="/workshop/view/691">Level 4: Harold </a>
+                </div>
+                <div class="col"><small>Will Hines</small></div>
+                <div class="col">Thu Feb 23 5pm</div>
+              </div>
+              <div class="row mt-1">
+                <div class="col">
+                  <a href="/workshop/view/694">Level 5: Fast And Slow Improv</a>
+                </div>
+                <div class="col"><small>Jake Regal</small></div>
+                <div class="col">Wed Feb 22 5pm</div>
+              </div>
+              <div class="row mt-1">
+                <div class="col">
+                  <a href="/workshop/view/682">Write Your Sketches</a>
+                </div>
+                <div class="col"><small>Nate Smith</small></div>
+                <div class="col">Thu Jan 26 7pm</div>
+              </div>
+              <div class="row mt-1">
+                <div class="col">
+                  <a href="/workshop/view/669">Character Drill</a>
+                </div>
+                <div class="col"><small>Shannon O'Neill</small></div>
+                <div class="col">Sun Jan 22 12pm</div>
+              </div>
+              <div class="row mt-1">
+                <div class="col">
+                  <a href="/workshop/view/668">Get Weird</a>
+                </div>
+                <div class="col"><small>Shannon O'Neill</small></div>
+                <div class="col">Thu Jan 12 2pm</div>
+              </div>
+              <div class="row mt-1">
+                <div class="col">
+                  <a href="/workshop/view/677">Level 5: Forms</a>
+                </div>
+                <div class="col"><small>Shannon O'Neill</small></div>
+                <div class="col">Wed Jan 11 5pm</div>
+              </div>
+              <div class="row mt-1">
+                <div class="col">
+                  <a href="/workshop/view/667"
+                    >Level 5: Support and Heightening</a
+                  >
+                </div>
+                <div class="col"><small>Shannon O'Neill</small></div>
+                <div class="col">Tue Jan 3 9am</div>
+              </div>
+              <div class="row mt-1">
+                <div class="col">
+                  <a href="/workshop/view/662">New Year's Resolutions</a>
+                </div>
+                <div class="col"><small>Billy Merritt</small></div>
+                <div class="col">Wed Dec 28 2022 11am</div>
+              </div>
+              <div class="row mt-1">
+                <div class="col">
+                  <a href="/workshop/view/666">Drag Your Family</a>
+                </div>
+                <div class="col"><small>Shannon O'Neill</small></div>
+                <div class="col">Wed Dec 21 2022 5pm</div>
+              </div>
+              <div class="row mt-1">
+                <div class="col">
+                  <a href="/workshop/view/657">Follow Your Gut</a>
+                </div>
+                <div class="col"><small>Billy Merritt</small></div>
+                <div class="col">Wed Dec 21 2022 4pm</div>
+              </div>
+              <div class="row mt-1">
+                <div class="col">
+                  <a href="/workshop/view/663">Make It Worse</a>
+                </div>
+                <div class="col"><small>Will Hines</small></div>
+                <div class="col">Wed Dec 21 2022 11am</div>
+              </div>
+              <div class="row mt-1">
+                <div class="col">
+                  <a href="/workshop/view/659">Second Beat Drill</a>
+                </div>
+                <div class="col"><small>Will Hines</small></div>
+                <div class="col">Mon Dec 19 2022 11am</div>
+              </div>
+              <div class="row mt-1">
+                <div class="col">
+                  <a href="/workshop/view/661">Finishing Strong</a>
+                </div>
+                <div class="col"><small>Billy Merritt</small></div>
+                <div class="col">Sat Dec 10 2022 12pm</div>
+              </div>
+              <div class="row mt-1">
+                <div class="col">
+                  <a href="/workshop/view/653">Grab Bag Sunday</a>
+                </div>
+                <div class="col"><small>Shannon O'Neill</small></div>
+                <div class="col">Sun Nov 20 2022 12pm</div>
+              </div>
+              <div class="row mt-1">
+                <div class="col">
+                  <a href="/workshop/view/647">Advanced Sketch</a>
+                </div>
+                <div class="col"><small>Nate Smith</small></div>
+                <div class="col">Sun Oct 23 2022 12pm</div>
+              </div>
+              <div class="row mt-1">
+                <div class="col">
+                  <a href="/workshop/view/644">Choose Your Own Adventure</a>
+                </div>
+                <div class="col"><small>Shannon O'Neill</small></div>
+                <div class="col">Mon Oct 17 2022 11:30am</div>
+              </div>
+              <div class="row mt-1">
+                <div class="col">
+                  <a href="/workshop/view/643">Connections &amp; Callbacks </a>
+                </div>
+                <div class="col"><small>Shannon O'Neill</small></div>
+                <div class="col">Sun Oct 16 2022 12pm</div>
+              </div>
+              <div class="row mt-1">
+                <div class="col">
+                  <a href="/workshop/view/637"
+                    >Level 1: Introduction to Improv</a
+                  >
+                </div>
+                <div class="col"><small>Will Hines</small></div>
+                <div class="col">Wed Oct 12 2022 5pm</div>
+              </div>
+              <div class="row mt-1">
+                <div class="col">
+                  <a href="/workshop/view/640">Improvised Movie</a>
+                </div>
+                <div class="col"><small>Billy Merritt</small></div>
+                <div class="col">Fri Oct 7 2022 12pm</div>
+              </div>
+              <div class="row mt-1">
+                <div class="col">
+                  <a href="/workshop/view/639">Callbacks &amp; Connections</a>
+                </div>
+                <div class="col"><small>Sarah Claspell</small></div>
+                <div class="col">Thu Oct 6 2022 11am</div>
+              </div>
+              <div class="row mt-1">
+                <div class="col">
+                  <a href="/workshop/view/646"
+                    >Say Yes and Say Why (cancelled)</a
+                  >
+                </div>
+                <div class="col"><small>Ronnie Adrian</small></div>
+                <div class="col">Wed Oct 5 2022 5pm</div>
+              </div>
+              <div class="row mt-1">
+                <div class="col">
+                  <a href="/workshop/view/634">Character Techniques</a>
+                </div>
+                <div class="col"><small>Nick Mandernach</small></div>
+                <div class="col">Sun Sep 25 2022 11am</div>
+              </div>
+              <div class="row mt-1">
+                <div class="col">
+                  <a href="/workshop/view/628">Go Ahead - Shit Your Pants</a>
+                </div>
+                <div class="col"><small>Shannon O'Neill</small></div>
+                <div class="col">Sun Sep 11 2022 12pm</div>
+              </div>
+              <div class="row mt-1">
+                <div class="col">
+                  <a href="/workshop/view/626">Start With A Character</a>
+                </div>
+                <div class="col"><small>Billy Merritt</small></div>
+                <div class="col">Fri Aug 26 2022 12pm</div>
+              </div>
+              <div class="row mt-1">
+                <div class="col">
+                  <a href="/workshop/view/620">Top Of Scenes</a>
+                </div>
+                <div class="col"><small>Shannon O'Neill</small></div>
+                <div class="col">Thu Aug 18 2022 9am</div>
+              </div>
+              <div class="row mt-1">
+                <div class="col">
+                  <a href="/workshop/view/619">Say Yes and Say Why</a>
+                </div>
+                <div class="col"><small>Ronnie Adrian</small></div>
+                <div class="col">Wed Aug 17 2022 5pm</div>
+              </div>
+              <div class="row mt-1">
+                <div class="col">
+                  <a href="/workshop/view/621">Grab Bag Friday</a>
+                </div>
+                <div class="col"><small>Shannon O'Neill</small></div>
+                <div class="col">Fri Aug 5 2022 9am</div>
+              </div>
+              <div class="row mt-1">
+                <div class="col">
+                  <a href="/workshop/view/608">No Jerks Allowed</a>
+                </div>
+                <div class="col"><small>Shannon O'Neill</small></div>
+                <div class="col">Thu Jul 7 2022 3pm</div>
+              </div>
+              <div class="row mt-1">
+                <div class="col">
+                  <a href="/workshop/view/614"
+                    >Screw Your Premise And The Horse It Rode In On</a
+                  >
+                </div>
+                <div class="col"><small>Billy Merritt</small></div>
+                <div class="col">Thu Jul 7 2022 12pm</div>
+              </div>
+              <div class="row mt-1">
+                <div class="col">
+                  <a href="/workshop/view/595"
+                    >Who Did It? Improvised Murder Mystery</a
+                  >
+                </div>
+                <div class="col"><small>Erick Acuna</small></div>
+                <div class="col">Tue Jul 5 2022 11am</div>
+              </div>
+              <div class="row mt-1">
+                <div class="col">
+                  <a href="/workshop/view/611">Be a More Fun Teammate</a>
+                </div>
+                <div class="col"><small>Dave Theune</small></div>
+                <div class="col">Tue Jul 5 2022 11am</div>
+              </div>
+              <div class="row mt-1">
+                <div class="col">
+                  <a href="/workshop/view/605">Give The Set Up</a>
+                </div>
+                <div class="col"><small>Alex Berg</small></div>
+                <div class="col">Thu Jun 9 2022 11am</div>
+              </div>
+              <div class="row mt-1">
+                <div class="col">
+                  <a href="/workshop/view/603">Beat em or Join Em?</a>
+                </div>
+                <div class="col"><small>Will Hines</small></div>
+                <div class="col">Tue May 31 2022 5pm</div>
+              </div>
+              <div class="row mt-1">
+                <div class="col">
+                  <a href="/workshop/view/589">Monoscene Plus</a>
+                </div>
+                <div class="col"><small>Michelle Gilliam</small></div>
+                <div class="col">Wed May 18 2022 11am</div>
+              </div>
+              <div class="row mt-1">
+                <div class="col">
+                  <a href="/workshop/view/582">Emotional Heightening (Game)</a>
+                </div>
+                <div class="col"><small>Alex Berg</small></div>
+                <div class="col">Tue May 17 2022 5pm</div>
+              </div>
+              <div class="row mt-1">
+                <div class="col">
+                  <a href="/workshop/view/581">The Documentary</a>
+                </div>
+                <div class="col"><small>Sarah Claspell</small></div>
+                <div class="col">Tue May 17 2022 11am</div>
+              </div>
+              <div class="row mt-1">
+                <div class="col">
+                  <a href="/workshop/view/588">Fun Forms - PM</a>
+                </div>
+                <div class="col"><small>Will Hines</small></div>
+                <div class="col">Wed May 11 2022 5pm</div>
+              </div>
+              <div class="row mt-1">
+                <div class="col">
+                  <a href="/workshop/view/587">Fun Forms - AM</a>
+                </div>
+                <div class="col"><small>Will Hines</small></div>
+                <div class="col">Wed May 11 2022 11am</div>
+              </div>
+              <div class="row mt-1">
+                <div class="col">
+                  <a href="/workshop/view/569">2-Person Scenes - Morning</a>
+                </div>
+                <div class="col"><small>Alex Berg</small></div>
+                <div class="col">Thu Apr 28 2022 11am</div>
+              </div>
+              <div class="row mt-1">
+                <div class="col">
+                  <a href="/workshop/view/575">Tone And Style</a>
+                </div>
+                <div class="col"><small>Nick Mandernach</small></div>
+                <div class="col">Sat Apr 23 2022 11am</div>
+              </div>
+              <div class="row mt-1">
+                <div class="col">
+                  <a href="/workshop/view/560">Grab Bag Saturday</a>
+                </div>
+                <div class="col"><small>Shannon O'Neill</small></div>
+                <div class="col">Sat Apr 23 2022 9am</div>
+              </div>
+              <div class="row mt-1">
+                <div class="col">
+                  <a href="/workshop/view/574">Build Your Confidence</a>
+                </div>
+                <div class="col"><small>Michelle Gilliam</small></div>
+                <div class="col">Wed Apr 20 2022 5pm</div>
+              </div>
+              <div class="row mt-1">
+                <div class="col">
+                  <a href="/workshop/view/572">Organic Scenework Boot Camp</a>
+                </div>
+                <div class="col"><small>Will Hines</small></div>
+                <div class="col">Thu Apr 14 2022 6pm</div>
+              </div>
+              <div class="row mt-1">
+                <div class="col">
+                  <a href="/workshop/view/564">2-Person Scenes - Evening</a>
+                </div>
+                <div class="col"><small>Alex Berg</small></div>
+                <div class="col">Thu Apr 7 2022 5pm</div>
+              </div>
+              <div class="row mt-1">
+                <div class="col">
+                  <a href="/workshop/view/531">Macroscene</a>
+                </div>
+                <div class="col"><small>Sarah Claspell</small></div>
+                <div class="col">Tue Mar 22 2022 11am</div>
+              </div>
+              <div class="row mt-1">
+                <div class="col"><a href="/workshop/view/524">The Glen</a></div>
+                <div class="col"><small>Jason Perez</small></div>
+                <div class="col">Sun Mar 20 2022 11am</div>
+              </div>
+              <div class="row mt-1">
+                <div class="col">
+                  <a href="/workshop/view/539">Improvised Genre Form</a>
+                </div>
+                <div class="col"><small>Billy Merritt</small></div>
+                <div class="col">Thu Mar 17 2022 11am</div>
+              </div>
+              <div class="row mt-1">
+                <div class="col">
+                  <a href="/workshop/view/537">The Documentary </a>
+                </div>
+                <div class="col"><small>Sarah Claspell</small></div>
+                <div class="col">Wed Mar 16 2022 5pm</div>
+              </div>
+              <div class="row mt-1">
+                <div class="col">
+                  <a href="/workshop/view/534">Advanced Monoscene</a>
+                </div>
+                <div class="col"><small>Michelle Gilliam</small></div>
+                <div class="col">Tue Mar 15 2022 5pm</div>
+              </div>
+              <div class="row mt-1">
+                <div class="col">
+                  <a href="/workshop/view/530">Suggestion And Go</a>
+                </div>
+                <div class="col"><small>Jim Woods</small></div>
+                <div class="col">Tue Mar 15 2022 11am</div>
+              </div>
+              <div class="row mt-1">
+                <div class="col">
+                  <a href="/workshop/view/538">Deconstruction</a>
+                </div>
+                <div class="col"><small>Alex Berg</small></div>
+                <div class="col">Wed Mar 9 2022 5pm</div>
+              </div>
+              <div class="row mt-1">
+                <div class="col">
+                  <a href="/workshop/view/542">Big Share: Fun Show </a>
+                </div>
+                <div class="col"><small>Shannon O'Neill</small></div>
+                <div class="col">Thu Mar 3 2022 3pm</div>
+              </div>
+              <div class="row mt-1">
+                <div class="col">
+                  <a href="/workshop/view/536">Do It Now</a>
+                </div>
+                <div class="col"><small>Alex Berg</small></div>
+                <div class="col">Wed Mar 2 2022 11am</div>
+              </div>
+              <div class="row mt-1">
+                <div class="col">
+                  <a href="/workshop/view/521"
+                    >2-Person Scene Workshop - Evening</a
+                  >
+                </div>
+                <div class="col"><small>Alex Berg</small></div>
+                <div class="col">Thu Feb 24 2022 5pm</div>
+              </div>
+              <div class="row mt-1">
+                <div class="col">
+                  <a href="/workshop/view/517"
+                    >2-Person Scene Workshop - Morning</a
+                  >
+                </div>
+                <div class="col"><small>Alex Berg</small></div>
+                <div class="col">Thu Feb 24 2022 11am</div>
+              </div>
+              <div class="row mt-1">
+                <div class="col">
+                  <a href="/workshop/view/508">Follow The Fun</a>
+                </div>
+                <div class="col"><small>Jim Woods</small></div>
+                <div class="col">Sun Feb 6 2022 5pm</div>
+              </div>
+              <div class="row mt-1">
+                <div class="col">
+                  <a href="/workshop/view/513">The Experiment</a>
+                </div>
+                <div class="col"><small>Michelle Gilliam</small></div>
+                <div class="col">Sun Feb 6 2022 5pm</div>
+              </div>
+              <div class="row mt-1">
+                <div class="col">
+                  <a href="/workshop/view/509">Go Ahead - Shit your Pants</a>
+                </div>
+                <div class="col"><small>Shannon O'Neill</small></div>
+                <div class="col">Thu Feb 3 2022 3pm</div>
+              </div>
+              <div class="row mt-1">
+                <div class="col">
+                  <a href="/workshop/view/512">Do Scenes</a>
+                </div>
+                <div class="col"><small>Michelle Gilliam</small></div>
+                <div class="col">Sun Jan 30 2022 5pm</div>
+              </div>
+              <div class="row mt-1">
+                <div class="col">
+                  <a href="/workshop/view/497">Monoscene Workshop</a>
+                </div>
+                <div class="col"><small>Michelle Gilliam</small></div>
+                <div class="col">Fri Jan 21 2022 11am</div>
+              </div>
+              <div class="row mt-1">
+                <div class="col">
+                  <a href="/workshop/view/505">Grab Bag Tuesday</a>
+                </div>
+                <div class="col"><small>Shannon O'Neill</small></div>
+                <div class="col">Tue Jan 18 2022 11am</div>
+              </div>
+              <div class="row mt-1">
+                <div class="col">
+                  <a href="/workshop/view/494"
+                    >Opening Through Second Beats (ADVANCED)</a
+                  >
+                </div>
+                <div class="col"><small>Jim Woods</small></div>
+                <div class="col">Tue Jan 11 2022 5pm</div>
+              </div>
+              <div class="row mt-1">
+                <div class="col">
+                  <a href="/workshop/view/477"
+                    >Blow Out The World Of Your Scene</a
+                  >
+                </div>
+                <div class="col"><small>Jim Woods</small></div>
+                <div class="col">Tue Jan 11 2022 11am</div>
+              </div>
+              <div class="row mt-1">
+                <div class="col">
+                  <a href="/workshop/view/500">Metallic Pretty Flower</a>
+                </div>
+                <div class="col"><small>Billy Merritt</small></div>
+                <div class="col">Fri Jan 7 2022 12pm</div>
+              </div>
+              <div class="row mt-1">
+                <div class="col">
+                  <a href="/workshop/view/476">Opening Through Second Beats</a>
+                </div>
+                <div class="col"><small>Jim Woods</small></div>
+                <div class="col">Thu Jan 6 2022 5pm</div>
+              </div>
+              <div class="row mt-1">
+                <div class="col">
+                  <a href="/workshop/view/493">Initiations!</a>
+                </div>
+                <div class="col"><small>Sarah Claspell</small></div>
+                <div class="col">Thu Jan 6 2022 11am</div>
+              </div>
+              <div class="row mt-1">
+                <div class="col">
+                  <a href="/workshop/view/491">Fun Forms (advanced) - PM</a>
+                </div>
+                <div class="col"><small>Will Hines</small></div>
+                <div class="col">Wed Jan 5 2022 5pm</div>
+              </div>
+              <div class="row mt-1">
+                <div class="col">
+                  <a href="/workshop/view/490">Fun Forms (advanced) - AM</a>
+                </div>
+                <div class="col"><small>Will Hines</small></div>
+                <div class="col">Wed Jan 5 2022 11am</div>
+              </div>
+              <div class="row mt-1">
+                <div class="col"><a href="/workshop/view/489">Openings</a></div>
+                <div class="col"><small>Alex Berg</small></div>
+                <div class="col">Wed Jan 5 2022 11am</div>
+              </div>
+              <div class="row mt-1">
+                <div class="col">
+                  <a href="/workshop/view/487">Marine Biology Monoscene</a>
+                </div>
+                <div class="col"><small>Alex Berg</small></div>
+                <div class="col">Tue Jan 4 2022 5pm</div>
+              </div>
+              <div class="row mt-1">
+                <div class="col">
+                  <a href="/workshop/view/475">The Improvised Play </a>
+                </div>
+                <div class="col"><small>Brandon Gardner</small></div>
+                <div class="col">Tue Jan 4 2022 3pm</div>
+              </div>
+              <div class="row mt-1">
+                <div class="col">
+                  <a href="/workshop/view/474">So You Want To Be A Teacher</a>
+                </div>
+                <div class="col"><small>Jason Perez</small></div>
+                <div class="col">Sun Jan 2 2022 11am</div>
+              </div>
+              <div class="row mt-1">
+                <div class="col">
+                  <a href="/workshop/view/465"
+                    >Advanced Improv Workout (IN PERSON)</a
+                  >
+                </div>
+                <div class="col"><small>Will Hines</small></div>
+                <div class="col">Sat Dec 18 2021 1:15pm</div>
+              </div>
+              <div class="row mt-1">
+                <div class="col">
+                  <a href="/workshop/view/468">2-Person Scene Workshop</a>
+                </div>
+                <div class="col"><small>Alex Berg</small></div>
+                <div class="col">Thu Dec 16 2021 5pm</div>
+              </div>
+              <div class="row mt-1">
+                <div class="col">
+                  <a href="/workshop/view/460">Premise Initiations (3 weeks)</a>
+                </div>
+                <div class="col"><small>Jim Woods</small></div>
+                <div class="col">Thu Dec 2 2021 5pm</div>
+              </div>
+              <div class="row mt-1">
+                <div class="col">
+                  <a href="/workshop/view/458">Premise Initiations (4 weeks)</a>
+                </div>
+                <div class="col"><small>Jim Woods</small></div>
+                <div class="col">Tue Nov 23 2021 5pm</div>
+              </div>
+              <div class="row mt-1">
+                <div class="col">
+                  <a href="/workshop/view/459">Relatable Whys</a>
+                </div>
+                <div class="col"><small>Jim Woods</small></div>
+                <div class="col">Tue Nov 16 2021 5pm</div>
+              </div>
+              <div class="row mt-1">
+                <div class="col">
+                  <a href="/workshop/view/447">Better Scenes</a>
+                </div>
+                <div class="col"><small>Will Hines</small></div>
+                <div class="col">Thu Nov 11 2021 5pm</div>
+              </div>
+              <div class="row mt-1">
+                <div class="col">
+                  <a href="/workshop/view/448"
+                    >What's Your Deal? - Individual Focus</a
+                  >
+                </div>
+                <div class="col"><small>Sarah Claspell</small></div>
+                <div class="col">Thu Nov 11 2021 11am</div>
+              </div>
+              <div class="row mt-1">
+                <div class="col">
+                  <a href="/workshop/view/444">Improvised Sci-Fi (Advanced)</a>
+                </div>
+                <div class="col"><small>Will Hines</small></div>
+                <div class="col">Wed Nov 10 2021 5pm</div>
+              </div>
+              <div class="row mt-1">
+                <div class="col">
+                  <a href="/workshop/view/445">Simplifying Game</a>
+                </div>
+                <div class="col"><small>Sarah Claspell</small></div>
+                <div class="col">Wed Nov 10 2021 5pm</div>
+              </div>
+              <div class="row mt-1">
+                <div class="col">
+                  <a href="/workshop/view/449"
+                    >Getting Better At Game - Advanced</a
+                  >
+                </div>
+                <div class="col"><small>Ronnie Adrian</small></div>
+                <div class="col">Wed Nov 10 2021 5pm</div>
+              </div>
+              <div class="row mt-1">
+                <div class="col">
+                  <a href="/workshop/view/442">Monoscene</a>
+                </div>
+                <div class="col"><small>Julie Brister</small></div>
+                <div class="col">Wed Nov 10 2021 11am</div>
+              </div>
+              <div class="row mt-1">
+                <div class="col">
+                  <a href="/workshop/view/441">Six Degrees of Separation</a>
+                </div>
+                <div class="col"><small>Brandon Gardner</small></div>
+                <div class="col">Tue Nov 9 2021 3pm</div>
+              </div>
+              <div class="row mt-1">
+                <div class="col">
+                  <a href="/workshop/view/425">Sketch Writing</a>
+                </div>
+                <div class="col"><small>Nate Smith</small></div>
+                <div class="col">Sun Nov 7 2021 5pm</div>
+              </div>
+              <div class="row mt-1">
+                <div class="col">
+                  <a href="/workshop/view/453">Calling It Out Supportively</a>
+                </div>
+                <div class="col"><small>Jim Woods</small></div>
+                <div class="col">Sat Nov 6 2021 3pm</div>
+              </div>
+              <div class="row mt-1">
+                <div class="col">
+                  <a href="/workshop/view/452"
+                    >Initiate To Get The Scene You Want</a
+                  >
+                </div>
+                <div class="col"><small>Jim Woods</small></div>
+                <div class="col">Thu Nov 4 2021 5pm</div>
+              </div>
+              <div class="row mt-1">
+                <div class="col">
+                  <a href="/workshop/view/454">Boost Your Improv Confidence</a>
+                </div>
+                <div class="col"><small>Sarah Claspell</small></div>
+                <div class="col">Tue Nov 2 2021 11am</div>
+              </div>
+              <div class="row mt-1">
+                <div class="col">
+                  <a href="/workshop/view/428"
+                    >Heightening Through Support (Advanced)</a
+                  >
+                </div>
+                <div class="col"><small>Will Hines</small></div>
+                <div class="col">Sun Oct 31 2021 12pm</div>
+              </div>
+              <div class="row mt-1">
+                <div class="col">
+                  <a href="/workshop/view/422"
+                    >Alex Berg 2-Person Scene Workshop</a
+                  >
+                </div>
+                <div class="col"><small>Alex Berg</small></div>
+                <div class="col">Thu Oct 28 2021 5pm</div>
+              </div>
+              <div class="row mt-1">
+                <div class="col">
+                  <a href="/workshop/view/433">Inanimate Object Improv</a>
+                </div>
+                <div class="col"><small>Will Hines</small></div>
+                <div class="col">Thu Oct 28 2021 5pm</div>
+              </div>
+              <div class="row mt-1">
+                <div class="col">
+                  <a href="/workshop/view/432">Introduction to Macroscene</a>
+                </div>
+                <div class="col"><small>Sarah Claspell</small></div>
+                <div class="col">Thu Oct 28 2021 11am</div>
+              </div>
+              <div class="row mt-1">
+                <div class="col">
+                  <a href="/workshop/view/431">Accept Offers (Advanced)</a>
+                </div>
+                <div class="col"><small>Will Hines</small></div>
+                <div class="col">Wed Oct 27 2021 10am</div>
+              </div>
+              <div class="row mt-1">
+                <div class="col">
+                  <a href="/workshop/view/426">Communicating My Idea</a>
+                </div>
+                <div class="col"><small>Ronnie Adrian</small></div>
+                <div class="col">Tue Oct 26 2021 5pm</div>
+              </div>
+              <div class="row mt-1">
+                <div class="col">
+                  <a href="/workshop/view/429">Two Person Scenes With Notes</a>
+                </div>
+                <div class="col"><small>Michelle Gilliam</small></div>
+                <div class="col">Mon Oct 25 2021 10am</div>
+              </div>
+              <div class="row mt-1">
+                <div class="col">
+                  <a href="/workshop/view/427">Write A Sketch</a>
+                </div>
+                <div class="col"><small>Will Hines</small></div>
+                <div class="col">Fri Oct 22 2021 10am</div>
+              </div>
+              <div class="row mt-1">
+                <div class="col">
+                  <a href="/workshop/view/424"
+                    >2 Person Scenes With Notes (BLUE)</a
+                  >
+                </div>
+                <div class="col"><small>Michelle Gilliam</small></div>
+                <div class="col">Sat Oct 16 2021 1pm</div>
+              </div>
+              <div class="row mt-1">
+                <div class="col">
+                  <a href="/workshop/view/423"
+                    >2 Person Scenes With Notes (RED)</a
+                  >
+                </div>
+                <div class="col"><small>Michelle Gilliam</small></div>
+                <div class="col">Sat Oct 16 2021 10:30am</div>
+              </div>
+              <div class="row mt-1">
+                <div class="col">
+                  <a href="/workshop/view/418">2 Person Scenes with Notes</a>
+                </div>
+                <div class="col"><small>Ronnie Adrian</small></div>
+                <div class="col">Mon Sep 27 2021 5pm</div>
+              </div>
+              <div class="row mt-1">
+                <div class="col">
+                  <a href="/workshop/view/417">Side Coaching</a>
+                </div>
+                <div class="col"><small>Ronnie Adrian</small></div>
+                <div class="col">Sat Sep 25 2021 11am</div>
+              </div>
+              <div class="row mt-1">
+                <div class="col">
+                  <a href="/workshop/view/416">Initiating Off A Suggestion</a>
+                </div>
+                <div class="col"><small>Ronnie Adrian</small></div>
+                <div class="col">Wed Sep 22 2021 5pm</div>
+              </div>
+              <div class="row mt-1">
+                <div class="col">
+                  <a href="/workshop/view/399">Get Off The Fence</a>
+                </div>
+                <div class="col"><small>Julie Brister</small></div>
+                <div class="col">Mon Sep 13 2021 11am</div>
+              </div>
+              <div class="row mt-1">
+                <div class="col">
+                  <a href="/workshop/view/400">Character Play Pen</a>
+                </div>
+                <div class="col"><small>Michelle Gilliam</small></div>
+                <div class="col">Mon Sep 13 2021 11am</div>
+              </div>
+              <div class="row mt-1">
+                <div class="col">
+                  <a href="/workshop/view/411">Improv Nerding</a>
+                </div>
+                <div class="col"><small>Alex Berg</small></div>
+                <div class="col">Sun Sep 12 2021 12pm</div>
+              </div>
+              <div class="row mt-1">
+                <div class="col">
+                  <a href="/workshop/view/397">Come On Feel the Joy</a>
+                </div>
+                <div class="col"><small>Jason Perez</small></div>
+                <div class="col">Sun Sep 12 2021 11am</div>
+              </div>
+              <div class="row mt-1">
+                <div class="col">
+                  <a href="/workshop/view/391"
+                    >Creating Worlds In Your Scenes</a
+                  >
+                </div>
+                <div class="col"><small>Ronnie Adrian</small></div>
+                <div class="col">Thu Aug 26 2021 11am</div>
+              </div>
+              <div class="row mt-1">
+                <div class="col">
+                  <a href="/workshop/view/384"
+                    >Will Hines 2-Person Scene Workshop</a
+                  >
+                </div>
+                <div class="col"><small>Will Hines</small></div>
+                <div class="col">Thu Aug 19 2021 5pm</div>
+              </div>
+              <div class="row mt-1">
+                <div class="col">
+                  <a href="/workshop/view/387">Longer Scenes</a>
+                </div>
+                <div class="col"><small>Will Hines</small></div>
+                <div class="col">Thu Aug 12 2021 11am</div>
+              </div>
+              <div class="row mt-1">
+                <div class="col">
+                  <a href="/workshop/view/378">For The Love of Characters</a>
+                </div>
+                <div class="col"><small>Michelle Gilliam</small></div>
+                <div class="col">Tue Jul 20 2021 5pm</div>
+              </div>
+              <div class="row mt-1">
+                <div class="col">
+                  <a href="/workshop/view/361">Improv Deep Dive</a>
+                </div>
+                <div class="col"><small>Michelle Gilliam</small></div>
+                <div class="col">Tue Jul 6 2021 11am</div>
+              </div>
+              <div class="row mt-1">
+                <div class="col"><a href="/workshop/view/360">La Ronde</a></div>
+                <div class="col"><small>Alex Berg</small></div>
+                <div class="col">Mon Jul 5 2021 5pm</div>
+              </div>
+              <div class="row mt-1">
+                <div class="col">
+                  <a href="/workshop/view/358">The Harold</a>
+                </div>
+                <div class="col"><small>Julie Brister</small></div>
+                <div class="col">Mon Jul 5 2021 10am</div>
+              </div>
+              <div class="row mt-1">
+                <div class="col">
+                  <a href="/workshop/view/355">Turning Improv Into Sketch </a>
+                </div>
+                <div class="col"><small>Nate Smith</small></div>
+                <div class="col">Sat Jun 19 2021 11am</div>
+              </div>
+              <div class="row mt-1">
+                <div class="col">
+                  <a href="/workshop/view/375">Make Yourself The Fool</a>
+                </div>
+                <div class="col"><small>Will Hines</small></div>
+                <div class="col">Fri Jun 18 2021 11am</div>
+              </div>
+              <div class="row mt-1">
+                <div class="col">
+                  <a href="/workshop/view/357">Saying Yes (and no)</a>
+                </div>
+                <div class="col"><small>Will Hines</small></div>
+                <div class="col">Fri Jun 11 2021 10am</div>
+              </div>
+              <div class="row mt-1">
+                <div class="col">
+                  <a href="/workshop/view/353">Saying Yes, Saying No</a>
+                </div>
+                <div class="col"><small>Will Hines</small></div>
+                <div class="col">Tue Jun 1 2021 10am</div>
+              </div>
+              <div class="row mt-1">
+                <div class="col">
+                  <a href="/workshop/view/341">The Slacker</a>
+                </div>
+                <div class="col"><small>Erick Acuna</small></div>
+                <div class="col">Wed May 19 2021 3pm</div>
+              </div>
+              <div class="row mt-1">
+                <div class="col">
+                  <a href="/workshop/view/344">Duo Class</a>
+                </div>
+                <div class="col"><small>Alex Berg</small></div>
+                <div class="col">Mon May 10 2021 11am</div>
+              </div>
+              <div class="row mt-1">
+                <div class="col">
+                  <a href="/workshop/view/342"
+                    >Putting Together Your Own One Person Show</a
+                  >
+                </div>
+                <div class="col"><small>Erick Acuna</small></div>
+                <div class="col">Sat May 8 2021 10am</div>
+              </div>
+              <div class="row mt-1">
+                <div class="col">
+                  <a href="/workshop/view/333"
+                    >Improv 3: 8 Lines To A Perfect Harold</a
+                  >
+                </div>
+                <div class="col"><small>Aman Adumer</small></div>
+                <div class="col">Thu May 6 2021 5pm</div>
+              </div>
+              <div class="row mt-1">
+                <div class="col">
+                  <a href="/workshop/view/331">Improv 4: Headless Harold</a>
+                </div>
+                <div class="col"><small>Will Hines</small></div>
+                <div class="col">Wed May 5 2021 5pm</div>
+              </div>
+              <div class="row mt-1">
+                <div class="col">
+                  <a href="/workshop/view/332">Improv 3: The Harold</a>
+                </div>
+                <div class="col"><small>Julie Brister</small></div>
+                <div class="col">Wed May 5 2021 5pm</div>
+              </div>
+              <div class="row mt-1">
+                <div class="col">
+                  <a href="/workshop/view/329">Improv 2: Monoscene</a>
+                </div>
+                <div class="col"><small>Julie Brister</small></div>
+                <div class="col">Wed May 5 2021 10am</div>
+              </div>
+              <div class="row mt-1">
+                <div class="col">
+                  <a href="/workshop/view/322">Improv 1: Monologue Show</a>
+                </div>
+                <div class="col"><small>Will Hines</small></div>
+                <div class="col">Mon May 3 2021 10am</div>
+              </div>
+              <div class="row mt-1">
+                <div class="col">
+                  <a href="/workshop/view/321">Improv 2: Pretty Flower</a>
+                </div>
+                <div class="col"><small>Aman Adumer</small></div>
+                <div class="col">Sat May 1 2021 11am</div>
+              </div>
+              <div class="row mt-1">
+                <div class="col">
+                  <a href="/workshop/view/338">Lessons In Agreement</a>
+                </div>
+                <div class="col"><small>Ronnie Adrian</small></div>
+                <div class="col">Tue Apr 27 2021 5pm</div>
+              </div>
+              <div class="row mt-1">
+                <div class="col">
+                  <a href="/workshop/view/335">See No Evil</a>
+                </div>
+                <div class="col"><small>Jason Perez</small></div>
+                <div class="col">Sun Apr 25 2021 11am</div>
+              </div>
+              <div class="row mt-1">
+                <div class="col">
+                  <a href="/workshop/view/340">The Choice You Made</a>
+                </div>
+                <div class="col"><small>Ronnie Adrian</small></div>
+                <div class="col">Thu Apr 22 2021 5pm</div>
+              </div>
+              <div class="row mt-1">
+                <div class="col">
+                  <a href="/workshop/view/337">What's Your Deal?</a>
+                </div>
+                <div class="col"><small>Sarah Claspell</small></div>
+                <div class="col">Wed Apr 21 2021 5pm</div>
+              </div>
+              <div class="row mt-1">
+                <div class="col">
+                  <a href="/workshop/view/339">Let's Play Game</a>
+                </div>
+                <div class="col"><small>Ronnie Adrian</small></div>
+                <div class="col">Mon Apr 19 2021 5pm</div>
+              </div>
+              <div class="row mt-1">
+                <div class="col">
+                  <a href="/workshop/view/317">Commercial Acting Class</a>
+                </div>
+                <div class="col"><small>Casey Feigh</small></div>
+                <div class="col">Sat Apr 10 2021 12pm</div>
+              </div>
+              <div class="row mt-1">
+                <div class="col">
+                  <a href="/workshop/view/320">Bringing Your Own Self</a>
+                </div>
+                <div class="col"><small>Erick Acuna</small></div>
+                <div class="col">Sat Apr 10 2021 11am</div>
+              </div>
+              <div class="row mt-1">
+                <div class="col">
+                  <a href="/workshop/view/297">Sketch 1 - Monday</a>
+                </div>
+                <div class="col"><small>Nate Smith</small></div>
+                <div class="col">Mon Mar 22 2021 5pm</div>
+              </div>
+              <div class="row mt-1">
+                <div class="col">
+                  <a href="/workshop/view/314">Find the Fool</a>
+                </div>
+                <div class="col"><small>Will Hines</small></div>
+                <div class="col">Mon Mar 22 2021 10am</div>
+              </div>
+              <div class="row mt-1">
+                <div class="col">
+                  <a href="/workshop/view/283"
+                    >Be A Better Unusual and Voice Of Reason</a
+                  >
+                </div>
+                <div class="col"><small>Ronnie Adrian</small></div>
+                <div class="col">Sat Feb 13 2021 11am</div>
+              </div>
+              <div class="row mt-1">
+                <div class="col"><a href="/workshop/view/286">Be Human</a></div>
+                <div class="col"><small>Michelle Gilliam</small></div>
+                <div class="col">Tue Feb 9 2021 11am</div>
+              </div>
+              <div class="row mt-1">
+                <div class="col">
+                  <a href="/workshop/view/284">Ronnie's Follow the Fun Jam</a>
+                </div>
+                <div class="col"><small>Ronnie Adrian</small></div>
+                <div class="col">Sat Feb 6 2021 11am</div>
+              </div>
+              <div class="row mt-1">
+                <div class="col">
+                  <a href="/workshop/view/282">Having Fun With The Why</a>
+                </div>
+                <div class="col"><small>Ronnie Adrian</small></div>
+                <div class="col">Wed Feb 3 2021 5pm</div>
+              </div>
+              <div class="row mt-1">
+                <div class="col">
+                  <a href="/workshop/view/280"
+                    >8 Lines to a Perfect Scene: Part 2</a
+                  >
+                </div>
+                <div class="col"><small>Aman Adumer</small></div>
+                <div class="col">Sat Jan 30 2021 2pm</div>
+              </div>
+              <div class="row mt-1">
+                <div class="col">
+                  <a href="/workshop/view/275"
+                    >Flocking: An Opening and An Exercise</a
+                  >
+                </div>
+                <div class="col"><small>Michelle Gilliam</small></div>
+                <div class="col">Wed Jan 20 2021 11am</div>
+              </div>
+              <div class="row mt-1">
+                <div class="col">
+                  <a href="/workshop/view/273">8 Lines to a Perfect Scene</a>
+                </div>
+                <div class="col"><small>Aman Adumer</small></div>
+                <div class="col">Mon Jan 18 2021 5pm</div>
+              </div>
+              <div class="row mt-1">
+                <div class="col"><a href="/workshop/view/255">Sketch 1</a></div>
+                <div class="col"><small>Nate Smith</small></div>
+                <div class="col">Fri Jan 15 2021 11am</div>
+              </div>
+              <div class="row mt-1">
+                <div class="col">
+                  <a href="/workshop/view/265">Improv 4: Good Montage</a>
+                </div>
+                <div class="col"><small>Will Hines</small></div>
+                <div class="col">Wed Jan 13 2021 5pm</div>
+              </div>
+              <div class="row mt-1">
+                <div class="col">
+                  <a href="/workshop/view/253">What's The Game?</a>
+                </div>
+                <div class="col"><small>Will Hines</small></div>
+                <div class="col">Tue Dec 22 2020 5pm</div>
+              </div>
+              <div class="row mt-1">
+                <div class="col">
+                  <a href="/workshop/view/251">William and Gilliam</a>
+                </div>
+                <div class="col"><small>Michelle Gilliam</small></div>
+                <div class="col">Mon Dec 21 2020 5:30pm</div>
+              </div>
+              <div class="row mt-1">
+                <div class="col">
+                  <a href="/workshop/view/252">Follow the Fun Jam</a>
+                </div>
+                <div class="col"><small>Ronnie Adrian</small></div>
+                <div class="col">Sun Dec 20 2020 11am</div>
+              </div>
+              <div class="row mt-1">
+                <div class="col">
+                  <a href="/workshop/view/247">Perfect Initiations</a>
+                </div>
+                <div class="col"><small>Aman Adumer</small></div>
+                <div class="col">Thu Dec 17 2020 11am</div>
+              </div>
+              <div class="row mt-1">
+                <div class="col">
+                  <a href="/workshop/view/246">Basic Sketch Writing Basics</a>
+                </div>
+                <div class="col"><small>Nate Smith</small></div>
+                <div class="col">Sat Dec 12 2020 1:30pm</div>
+              </div>
+              <div class="row mt-1">
+                <div class="col">
+                  <a href="/workshop/view/243">Group Scenes</a>
+                </div>
+                <div class="col"><small>Aman Adumer</small></div>
+                <div class="col">Mon Nov 30 2020 11am</div>
+              </div>
+              <div class="row mt-1">
+                <div class="col">
+                  <a href="/workshop/view/244">Five Sketches</a>
+                </div>
+                <div class="col"><small>Nate Smith</small></div>
+                <div class="col">Sun Nov 29 2020 1pm</div>
+              </div>
+              <div class="row mt-1">
+                <div class="col">
+                  <a href="/workshop/view/242">Perfect Starts</a>
+                </div>
+                <div class="col"><small>Aman Adumer</small></div>
+                <div class="col">Sat Nov 21 2020 11am</div>
+              </div>
+              <div class="row mt-1">
+                <div class="col">
+                  <a href="/workshop/view/240"
+                    >Will Thinks The Pattern Game is Useless So Let’s Prove Him
+                    Wrong</a
+                  >
+                </div>
+                <div class="col"><small>Ronnie Adrian</small></div>
+                <div class="col">Sat Nov 14 2020 11am</div>
+              </div>
+              <div class="row mt-1">
+                <div class="col">
+                  <a href="/workshop/view/234">Intro to Monoscene</a>
+                </div>
+                <div class="col"><small>Julie Brister</small></div>
+                <div class="col">Thu Nov 12 2020 11am</div>
+              </div>
+              <div class="row mt-1">
+                <div class="col">
+                  <a href="/workshop/view/239">Ronnie's Jam!</a>
+                </div>
+                <div class="col"><small>Ronnie Adrian</small></div>
+                <div class="col">Tue Nov 10 2020 5pm</div>
+              </div>
+              <div class="row mt-1">
+                <div class="col">
+                  <a href="/workshop/view/238"
+                    >Level Three: Harold (Tuesday PM)</a
+                  >
+                </div>
+                <div class="col"><small>Will Hines</small></div>
+                <div class="col">Tue Nov 10 2020 5pm</div>
+              </div>
+              <div class="row mt-1">
+                <div class="col">
+                  <a href="/workshop/view/237">Level Three: Harold (Wed PM)</a>
+                </div>
+                <div class="col"><small>Will Hines</small></div>
+                <div class="col">Wed Nov 4 2020 5pm</div>
+              </div>
+              <div class="row mt-1">
+                <div class="col">
+                  <a href="/workshop/view/236">Level Three: Harold (Wed AM)</a>
+                </div>
+                <div class="col"><small>Will Hines</small></div>
+                <div class="col">Wed Nov 4 2020 11am</div>
+              </div>
+              <div class="row mt-1">
+                <div class="col">
+                  <a href="/workshop/view/232"
+                    >Level One: Unusual Thing (Tuesday AM)</a
+                  >
+                </div>
+                <div class="col"><small>Julie Brister</small></div>
+                <div class="col">Tue Nov 3 2020 11am</div>
+              </div>
+              <div class="row mt-1">
+                <div class="col">
+                  <a href="/workshop/view/225"
+                    >Level One: Unusual Thing and Game</a
+                  >
+                </div>
+                <div class="col"><small>Brandon Gardner</small></div>
+                <div class="col">Fri Oct 16 2020 11am</div>
+              </div>
+              <div class="row mt-1">
+                <div class="col">
+                  <a href="/workshop/view/229">We are the Same</a>
+                </div>
+                <div class="col"><small>Julie Brister</small></div>
+                <div class="col">Fri Oct 16 2020 11am</div>
+              </div>
+              <div class="row mt-1">
+                <div class="col">
+                  <a href="/workshop/view/228">Reacting Truthfully</a>
+                </div>
+                <div class="col"><small>Julie Brister</small></div>
+                <div class="col">Thu Oct 15 2020 5pm</div>
+              </div>
+              <div class="row mt-1">
+                <div class="col">
+                  <a href="/workshop/view/207"
+                    >Fall Wednesday Evening L4: Good Montage</a
+                  >
+                </div>
+                <div class="col"><small>Will Hines</small></div>
+                <div class="col">Wed Sep 9 2020 5pm</div>
+              </div>
+              <div class="row mt-1">
+                <div class="col">
+                  <a href="/workshop/view/209"
+                    >Fall Thursday Evening L4: Good Montage</a
+                  >
+                </div>
+                <div class="col"><small>Will Hines</small></div>
+                <div class="col">Thu Sep 3 2020 5pm</div>
+              </div>
+              <div class="row mt-1">
+                <div class="col">
+                  <a href="/workshop/view/208"
+                    >Fall Thursday Morning L4: Good Montage</a
+                  >
+                </div>
+                <div class="col"><small>Will Hines</small></div>
+                <div class="col">Thu Sep 3 2020 10am</div>
+              </div>
+              <div class="row mt-1">
+                <div class="col">
+                  <a href="/workshop/view/221">Scenework Made Easy</a>
+                </div>
+                <div class="col"><small>Ronnie Adrian</small></div>
+                <div class="col">Wed Sep 2 2020 6pm</div>
+              </div>
+              <div class="row mt-1">
+                <div class="col">
+                  <a href="/workshop/view/206"
+                    >Fall Wednesday Morning L4: Good Montage</a
+                  >
+                </div>
+                <div class="col"><small>Will Hines</small></div>
+                <div class="col">Wed Sep 2 2020 11am</div>
+              </div>
+              <div class="row mt-1">
+                <div class="col">
+                  <a href="/workshop/view/212"
+                    >Fall Tuesday Evening L2: Character / Monoscene</a
+                  >
+                </div>
+                <div class="col"><small>Will Hines</small></div>
+                <div class="col">Tue Sep 1 2020 5pm</div>
+              </div>
+              <div class="row mt-1">
+                <div class="col">
+                  <a href="/workshop/view/211"
+                    >Fall Tuesday Morning L2: Character / Monoscene</a
+                  >
+                </div>
+                <div class="col"><small>Will Hines</small></div>
+                <div class="col">Tue Sep 1 2020 11am</div>
+              </div>
+              <div class="row mt-1">
+                <div class="col">
+                  <a href="/workshop/view/210"
+                    >Fall Monday Evening L2: Character / Monoscene</a
+                  >
+                </div>
+                <div class="col"><small>Will Hines</small></div>
+                <div class="col">Mon Aug 31 2020 5pm</div>
+              </div>
+              <div class="row mt-1">
+                <div class="col">
+                  <a href="/workshop/view/205"
+                    >Fall Sunday Morning L4: Good Montage</a
+                  >
+                </div>
+                <div class="col"><small>Will Hines</small></div>
+                <div class="col">Sun Aug 30 2020 10am</div>
+              </div>
+              <div class="row mt-1">
+                <div class="col">
+                  <a href="/workshop/view/203"
+                    >Getting Out of Your Head About Game</a
+                  >
+                </div>
+                <div class="col"><small>Brandon Gardner</small></div>
+                <div class="col">Fri Aug 28 2020 11am</div>
+              </div>
+              <div class="row mt-1">
+                <div class="col">
+                  <a href="/workshop/view/219">Game Fundamentals</a>
+                </div>
+                <div class="col"><small>Will Hines</small></div>
+                <div class="col">Thu Aug 27 2020 5pm</div>
+              </div>
+              <div class="row mt-1">
+                <div class="col">
+                  <a href="/workshop/view/218">Scenes From Monologues</a>
+                </div>
+                <div class="col"><small>Will Hines</small></div>
+                <div class="col">Thu Aug 27 2020 10am</div>
+              </div>
+              <div class="row mt-1">
+                <div class="col">
+                  <a href="/workshop/view/217">Second Beats</a>
+                </div>
+                <div class="col"><small>Will Hines</small></div>
+                <div class="col">Wed Aug 26 2020 5pm</div>
+              </div>
+              <div class="row mt-1">
+                <div class="col">
+                  <a href="/workshop/view/215">Character Games</a>
+                </div>
+                <div class="col"><small>Will Hines</small></div>
+                <div class="col">Tue Aug 25 2020 5pm</div>
+              </div>
+              <div class="row mt-1">
+                <div class="col">
+                  <a href="/workshop/view/214">Notes on Game</a>
+                </div>
+                <div class="col"><small>Will Hines</small></div>
+                <div class="col">Tue Aug 25 2020 10am</div>
+              </div>
+              <div class="row mt-1">
+                <div class="col">
+                  <a href="/workshop/view/193"
+                    >Kat Palardy: The Drive Thru Character Clinic</a
+                  >
+                </div>
+                <div class="col"><small>Kat Palardy</small></div>
+                <div class="col">Sat Jul 18 2020 12pm</div>
+              </div>
+              <div class="row mt-1">
+                <div class="col">
+                  <a href="/workshop/view/181"
+                    >July Friday Morning Better Games One</a
+                  >
+                </div>
+                <div class="col"><small>Will Hines</small></div>
+                <div class="col">Fri Jul 10 2020 11am</div>
+              </div>
+              <div class="row mt-1">
+                <div class="col">
+                  <a href="/workshop/view/190"
+                    >Brandon Gardner: Getting Out of Your Head About Game (FOUR
+                    WEEK VERSION)</a
+                  >
+                </div>
+                <div class="col"><small>Brandon Gardner</small></div>
+                <div class="col">Fri Jul 10 2020 11am</div>
+              </div>
+              <div class="row mt-1">
+                <div class="col">
+                  <a href="/workshop/view/186"
+                    >July Thursday Evening Better Games Three</a
+                  >
+                </div>
+                <div class="col"><small>Will Hines</small></div>
+                <div class="col">Thu Jul 9 2020 4pm</div>
+              </div>
+              <div class="row mt-1">
+                <div class="col">
+                  <a href="/workshop/view/183"
+                    >July Wednesday Evening Better Games Two</a
+                  >
+                </div>
+                <div class="col"><small>Will Hines</small></div>
+                <div class="col">Wed Jul 8 2020 6pm</div>
+              </div>
+              <div class="row mt-1">
+                <div class="col">
+                  <a href="/workshop/view/182"
+                    >July Wednesday Morning Better Games Two</a
+                  >
+                </div>
+                <div class="col"><small>Will Hines</small></div>
+                <div class="col">Wed Jul 8 2020 11am</div>
+              </div>
+              <div class="row mt-1">
+                <div class="col">
+                  <a href="/workshop/view/185"
+                    >July Tuesday Evening Better Games Three</a
+                  >
+                </div>
+                <div class="col"><small>Will Hines</small></div>
+                <div class="col">Tue Jul 7 2020 4pm</div>
+              </div>
+              <div class="row mt-1">
+                <div class="col">
+                  <a href="/workshop/view/184"
+                    >July Tuesday Morning Better Games Three</a
+                  >
+                </div>
+                <div class="col"><small>Will Hines</small></div>
+                <div class="col">Tue Jul 7 2020 11am</div>
+              </div>
+              <div class="row mt-1">
+                <div class="col">
+                  <a href="/workshop/view/180"
+                    >July Monday Evening Better Games One</a
+                  >
+                </div>
+                <div class="col"><small>Will Hines</small></div>
+                <div class="col">Mon Jul 6 2020 4pm</div>
+              </div>
+              <div class="row mt-1">
+                <div class="col">
+                  <a href="/workshop/view/189">Make it True, Play it Real</a>
+                </div>
+                <div class="col"><small>Will Hines</small></div>
+                <div class="col">Thu Jul 2 2020 11am</div>
+              </div>
+              <div class="row mt-1">
+                <div class="col">
+                  <a href="/workshop/view/178"
+                    >Brandon Gardner: Let's Focus on ACTING</a
+                  >
+                </div>
+                <div class="col"><small>Brandon Gardner</small></div>
+                <div class="col">Tue Jun 23 2020 1pm</div>
+              </div>
+              <div class="row mt-1">
+                <div class="col">
+                  <a href="/workshop/view/175">Beth Appel Sketch Workshop</a>
+                </div>
+                <div class="col"><small>Beth Appel</small></div>
+                <div class="col">Sun Jun 7 2020 12pm</div>
+              </div>
+              <div class="row mt-1">
+                <div class="col">
+                  <a href="/workshop/view/177">Use A Different Voice</a>
+                </div>
+                <div class="col"><small>Will Hines</small></div>
+                <div class="col">Tue Jun 2 2020 4pm</div>
+              </div>
+              <div class="row mt-1">
+                <div class="col">
+                  <a href="/workshop/view/170"
+                    >Brandon Gardner: Getting Out of Your Head About Game</a
+                  >
+                </div>
+                <div class="col"><small>Brandon Gardner</small></div>
+                <div class="col">Fri May 29 2020 11am</div>
+              </div>
+              <div class="row mt-1">
+                <div class="col">
+                  <a href="/workshop/view/159"
+                    >Thursday Evening Better Games Level Two</a
+                  >
+                </div>
+                <div class="col"><small>Will Hines</small></div>
+                <div class="col">Thu May 28 2020 4pm</div>
+              </div>
+              <div class="row mt-1">
+                <div class="col">
+                  <a href="/workshop/view/164"
+                    >Wednesday Evening Better Games Level Two</a
+                  >
+                </div>
+                <div class="col"><small>Will Hines</small></div>
+                <div class="col">Wed May 27 2020 6pm</div>
+              </div>
+              <div class="row mt-1">
+                <div class="col">
+                  <a href="/workshop/view/165"
+                    >Tuesday Morning Better Games Level Two</a
+                  >
+                </div>
+                <div class="col"><small>Will Hines</small></div>
+                <div class="col">Tue May 26 2020 10am</div>
+              </div>
+              <div class="row mt-1">
+                <div class="col">
+                  <a href="/workshop/view/161"
+                    >Monday Evening Better Games Level One</a
+                  >
+                </div>
+                <div class="col"><small>Will Hines</small></div>
+                <div class="col">Mon May 25 2020 4pm</div>
+              </div>
+              <div class="row mt-1">
+                <div class="col">
+                  <a href="/workshop/view/158"
+                    >Friday Morning Better Games Level Two</a
+                  >
+                </div>
+                <div class="col"><small>Will Hines</small></div>
+                <div class="col">Fri May 22 2020 10am</div>
+              </div>
+              <div class="row mt-1">
+                <div class="col">
+                  <a href="/workshop/view/163">Let's Fight</a>
+                </div>
+                <div class="col"><small>Will Hines</small></div>
+                <div class="col">Thu May 21 2020 10am</div>
+              </div>
+              <div class="row mt-1">
+                <div class="col">
+                  <a href="/workshop/view/160"
+                    >Wednesday Morning Better Games Level One</a
+                  >
+                </div>
+                <div class="col"><small>Will Hines</small></div>
+                <div class="col">Wed May 20 2020 10am</div>
+              </div>
+              <div class="row mt-1">
+                <div class="col">
+                  <a href="/workshop/view/162">Say Yes, Play it Real</a>
+                </div>
+                <div class="col"><small>Will Hines</small></div>
+                <div class="col">Mon May 18 2020 4pm</div>
+              </div>
+              <div class="row mt-1">
+                <div class="col">
+                  <a href="/workshop/view/152">Walk-ons and Tag-outs</a>
+                </div>
+                <div class="col"><small>Will Hines</small></div>
+                <div class="col">Fri May 15 2020 10am</div>
+              </div>
+              <div class="row mt-1">
+                <div class="col">
+                  <a href="/workshop/view/144">Best Practices</a>
+                </div>
+                <div class="col"><small>Will Hines</small></div>
+                <div class="col">Mon May 4 2020 4pm</div>
+              </div>
+              <div class="row mt-1">
+                <div class="col">
+                  <a href="/workshop/view/142">Follow the Why</a>
+                </div>
+                <div class="col"><small>Will Hines</small></div>
+                <div class="col">Thu Apr 30 2020 10am</div>
+              </div>
+              <div class="row mt-1">
+                <div class="col">
+                  <a href="/workshop/view/139"
+                    >FOUR WEEKS: Better Games Tuesday Evening</a
+                  >
+                </div>
+                <div class="col"><small>Will Hines</small></div>
+                <div class="col">Tue Apr 28 2020 4pm</div>
+              </div>
+              <div class="row mt-1">
+                <div class="col">
+                  <a href="/workshop/view/138">SKETCH CLASS: Write A Sketch</a>
+                </div>
+                <div class="col"><small>Will Hines</small></div>
+                <div class="col">Mon Apr 27 2020 10am</div>
+              </div>
+              <div class="row mt-1">
+                <div class="col"><a href="/workshop/view/136">Why?</a></div>
+                <div class="col"><small>Will Hines</small></div>
+                <div class="col">Sun Apr 26 2020 10am</div>
+              </div>
+              <div class="row mt-1">
+                <div class="col">
+                  <a href="/workshop/view/134"
+                    >FOUR WEEKS: Better Games Thursday Evening</a
+                  >
+                </div>
+                <div class="col"><small>Will Hines</small></div>
+                <div class="col">Thu Apr 23 2020 6pm</div>
+              </div>
+              <div class="row mt-1">
+                <div class="col">
+                  <a href="/workshop/view/132"
+                    >FOUR WEEKS: Better Games Tuesday Morning</a
+                  >
+                </div>
+                <div class="col"><small>Will Hines</small></div>
+                <div class="col">Tue Apr 21 2020 10am</div>
+              </div>
+              <div class="row mt-1">
+                <div class="col">
+                  <a href="/workshop/view/130">Let's Fight: Europe</a>
+                </div>
+                <div class="col"><small>Will Hines</small></div>
+                <div class="col">Mon Apr 20 2020 10am</div>
+              </div>
+              <div class="row mt-1">
+                <div class="col">
+                  <a href="/workshop/view/127"
+                    >FOUR WEEK CLASS Better Games: Europe</a
+                  >
+                </div>
+                <div class="col"><small>Will Hines</small></div>
+                <div class="col">Wed Apr 15 2020 10am</div>
+              </div>
+              <div class="row mt-1">
+                <div class="col">
+                  <a href="/workshop/view/128">Better Heightening</a>
+                </div>
+                <div class="col"><small>Will Hines</small></div>
+                <div class="col">Tue Apr 14 2020 4pm</div>
+              </div>
+              <div class="row mt-1">
+                <div class="col">
+                  <a href="/workshop/view/126">Better Heightening: Europe</a>
+                </div>
+                <div class="col"><small>Will Hines</small></div>
+                <div class="col">Mon Apr 13 2020 10am</div>
+              </div>
+              <div class="row mt-1">
+                <div class="col">
+                  <a href="/workshop/view/125">Game of the Scene: Australia</a>
+                </div>
+                <div class="col"><small>Will Hines</small></div>
+                <div class="col">Sat Apr 11 2020 6pm</div>
+              </div>
+              <div class="row mt-1">
+                <div class="col">
+                  <a href="/workshop/view/124">Humanize Yourself</a>
+                </div>
+                <div class="col"><small>Will Hines</small></div>
+                <div class="col">Sat Apr 11 2020 12pm</div>
+              </div>
+              <div class="row mt-1">
+                <div class="col">
+                  <a href="/workshop/view/123">FOUR WEEK CLASS: Better Games</a>
+                </div>
+                <div class="col"><small>Will Hines</small></div>
+                <div class="col">Fri Apr 10 2020 5pm</div>
+              </div>
+              <div class="row mt-1">
+                <div class="col">
+                  <a href="/workshop/view/121">Game of the Scene: Europe</a>
+                </div>
+                <div class="col"><small>Will Hines</small></div>
+                <div class="col">Thu Apr 9 2020 10am</div>
+              </div>
+              <div class="row mt-1">
+                <div class="col">
+                  <a href="/workshop/view/118">Keep it Real and Heighten</a>
+                </div>
+                <div class="col"><small>Will Hines</small></div>
+                <div class="col">Tue Apr 7 2020 6pm</div>
+              </div>
+              <div class="row mt-1">
+                <div class="col">
+                  <a href="/workshop/view/116">Let's Fight: East Coast</a>
+                </div>
+                <div class="col"><small>Will Hines</small></div>
+                <div class="col">Mon Apr 6 2020 3:45pm</div>
+              </div>
+              <div class="row mt-1">
+                <div class="col">
+                  <a href="/workshop/view/115">Europe: Humanize Yourself</a>
+                </div>
+                <div class="col"><small>Will Hines</small></div>
+                <div class="col">Fri Apr 3 2020 10am</div>
+              </div>
+              <div class="row mt-1">
+                <div class="col">
+                  <a href="/workshop/view/111">Europe: Let's Fight</a>
+                </div>
+                <div class="col"><small>Will Hines</small></div>
+                <div class="col">Wed Apr 1 2020 9:30am</div>
+              </div>
+              <div class="row mt-1">
+                <div class="col">
+                  <a href="/workshop/view/108"
+                    >For European Improvisers: Intermediate Workshop</a
+                  >
+                </div>
+                <div class="col"><small>Will Hines</small></div>
+                <div class="col">Tue Mar 31 2020 10am</div>
+              </div>
+              <div class="row mt-1">
+                <div class="col">
+                  <a href="/workshop/view/107">Expert Workshop: Let's Fight</a>
+                </div>
+                <div class="col"><small>Will Hines</small></div>
+                <div class="col">Mon Mar 30 2020 6pm</div>
+              </div>
+              <div class="row mt-1">
+                <div class="col">
+                  <a href="/workshop/view/106"
+                    >Intermediate Workshop: Humanize Yourself</a
+                  >
+                </div>
+                <div class="col"><small>Will Hines</small></div>
+                <div class="col">Sun Mar 29 2020 12pm</div>
+              </div>
+              <div class="row mt-1">
+                <div class="col">
+                  <a href="/workshop/view/105">Level Zero Workshop: Fun</a>
+                </div>
+                <div class="col"><small>Will Hines</small></div>
+                <div class="col">Sat Mar 28 2020 12pm</div>
+              </div>
+              <div class="row mt-1">
+                <div class="col">
+                  <a href="/workshop/view/104"
+                    >Intermediate Grab-Bag: Pay What You Can</a
+                  >
+                </div>
+                <div class="col"><small>Will Hines</small></div>
+                <div class="col">Fri Mar 27 2020 5pm</div>
+              </div>
+            </div>
+          </div>
+        </article>
+      </div>
+    </main>
+
+    <footer class="pt-4 pb-4">
+      <div class="container-lg container-fluid">
+        <h3 class="mb-3">The World's Greatest Improv School</h3>
+        <div class="row">
+          <div class="col-lg-7 col-sm-12">
+            <ul class="nav mb-3">
+              <li class="nav-item">
+                <a class="nav-link" href="/classes">Classes</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="/calendar">Calendar</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="/about-school">About</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="/shows">Shows</a>
+              </li>
+            </ul>
+          </div>
+          <div class="col-lg-5 col-sm-12">
+            <a
+              href="https://www.instagram.com/wgimprovschool/"
+              class="text-decoration-none"
+              ><i class="bi-camera fs-4 me-1"></i> @wgimprovschool</a
+            >
+            <a
+              href="https://www.instagram.com/clubhousefridays/"
+              class="text-decoration-none"
+              ><i class="bi-camera fs-4 ms-2 me-1"></i> @clubhousefridays</a
+            >
+          </div>
+        </div>
+        <div class="footer-colophon row justify-content-between mb-3">
+          <div class="col-lg-7 col-sm-12">
+            Send questions to -
+            <a href="mailto:classes@wgimprovschool.com"
+              >classes@wgimprovschool.com</a
+            >
+            | <a href="/privacy">Privacy Policy</a>
+          </div>
+          <div class="col-lg-5 col-sm-12">
+            Site uses: <a href="http://www.php.net/">PHP</a> /
+            <a href="http://www.mysql.com/">MySQL</a> /
+            <a href="http://www.getbootstrap.com/">Bootstrap</a> /
+            <a href="https://icons.getbootstrap.com/">Bootstrap Icons</a>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Login Modal -->
+    <div
+      class="modal fade"
+      id="login-modal"
+      tabindex="-1"
+      role="dialog"
+      aria-labelledby="login_title"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 id="login_title" class="modal-title">
+              We Email You A Login Link
+            </h5>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body">
+            <script>
+              // Example starter JavaScript for disabling form submissions if there are invalid fields
+              (function () {
+                "use strict";
+
+                window.addEventListener(
+                  "load",
+                  function () {
+                    var form = document.getElementById("log_in");
+                    form.addEventListener(
+                      "submit",
+                      function (event) {
+                        if (form.checkValidity() === false) {
+                          event.preventDefault();
+                          event.stopPropagation();
+                        }
+                        form.classList.add("was-validated");
+                      },
+                      false
+                    );
+                  },
+                  false
+                );
+              })();
+            </script>
+
+            <form id="log_in" action="baloney.php" method="post" novalidate="">
+              <input
+                type="hidden"
+                name="when_login"
+                value="2023-03-10T23:09:48-08:00"
+              />
+              <div class="form-group">
+                <label for="email">Email</label>
+                <input
+                  class="form-control mx-md-1"
+                  type="email"
+                  id="email"
+                  name="email"
+                  value=""
+                  placeholder="something@something.com"
+                  required=""
+                  aria-describedby="emailHelpBlock"
+                /><small id="emailHelpBlock" class="form-text"
+                  >We will send you an email with a link to click.</small
+                >
+                <div class="invalid-feedback">
+                  Must be a valid email you have access to
+                </div>
+              </div>
+              <input
+                type="checkbox"
+                name="fax_only"
+                value="1"
+                style="display: none !important"
+                tabindex="-1"
+              /><button type="submit" class="btn btn-primary">
+                Send Me An Email
+              </button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
+<!-- 93.757203-->
